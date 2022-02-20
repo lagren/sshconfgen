@@ -1,10 +1,4 @@
-name: foobar
-filename: foo.conf
-filters:
-  - environment: qa
+name: Simple example
 config:
-  host: "{{.name}}_{{.tier}} {{.name}}_{{.tier}}.example.com"
+  host: "{{.name}} {{.name}}.example.com"
   hostname: "{{.ip}}"
-  port: "{{.customPort}}"
-  dynamic_forward: foo
-  forward_x11: true
